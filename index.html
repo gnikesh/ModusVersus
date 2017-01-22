@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+	<title>MODUSverus | Features</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+	<link rel="stylesheet" type ="text/css" href="css/layout.css" media="screen" />
+</head>
+
+
+<body>
+<div class='main-wrapper'>
+<!-- Header Starts -->
+	<div class='header-wrapper'>
+		<div class="header-upper">
+			<div class="header-upper-body clrfix">
+				<div class="header-logo">
+					<img src="images/logo.png" alt="Logo" />
+				</div>
+				<div class="header-nav-bar clrfix">
+					<div class="header-nav-bar-menu">
+						<ul>
+							<li><a href="">HOME</a></li>
+							<li><a href="">ABOUT</a></li>
+							<li><a href="">SERVICES</a></li>
+							<li class="drop-item">
+									<a href="" class="drop-item-value">
+										<img src="images/down-arrow.png" style="padding-right: 8px;" />PORTFOLIO
+									</a>
+							
+									<div class="header-drop-down-content">
+										<a href="">Portfolio 1</a>
+										<a href="">Portfolio 2</a>
+										<a href="">Portfolio 3</a>
+									</div>
+							</li>
+							<li><a href="">BLOG</a></li>
+							<li><a href="">FEATURES</a></li>
+							<li><a href="">CONTACTS</a></li>
+						</ul>
+					</div>
+					<div class="header-nav-bar-search">
+						<a class="search-icon-href" href=""><img src="images/search-button.png"></a>
+
+						<div class="search-box-wrapper">
+							<input id="search-box" type="text" name="search" placeholder="Search the site">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-lower">
+			<div class="header-lower-body clrfix">
+				<span id="features-text">FEATURES</span>
+				<span id="home-feature-menu"><a href="">Home</a>&nbsp/&nbsp<a href="">Features</a></span>
+			</div>
+		</div>
+	</div>
+<!-- End of Header -->
+
+<!-- Upper Slider Starts Here -->
+
+	<div class='upper-slider-body'> 
+
+		<a href="javascript:void(0)" class="left-button" onclick="moveSlides(1)">
+			<div class="slider-left">
+				<img src="images/slider-left-arrow.png" alt="LA">
+			</div>
+		</a>
+
+		<div class="slider-body clrfix">
+				
+			<div class="up-slider fade">
+				<img src="images/slider-images/image1.jpg" />
+				<div class="slider-text">PROJECT SLIDESHOW</div>
+			</div> 
+
+			<div class="up-slider fade">
+				<img src="images/slider-images/image2.jpg" />
+				<div class="slider-text">PROJECT SLIDESHOW</div>
+			</div> 
+
+			<div class="up-slider fade">
+				<img src="images/slider-images/image3.jpg" />
+				<div class="slider-text">PROJECT SLIDESHOW</div>
+			</div> 
+		</div>
+
+		<div class="slider-indicator">
+			<span class="indicator-box" onclick="currentSlide(1)"></span>
+			<span class="indicator-box" onclick="currentSlide(2)"></span>
+			<span class="indicator-box" onclick="currentSlide(3)"></span>
+		</div>
+
+		<a href="javascript:void(0)" class="right-button" onclick="moveSlides(1)">
+			<div class="slider-right">
+				<img src="images/slider-right-arrow.png" alt="RA">
+			</div>
+		</a>
+	</div>
+
+<!-- Upper Slider Ends Here -->
+
+<!-- Lower SLider Body Starts Here -->
+
+	<div class="lower-slider-body clrfix">
+		<div class="lower-slider-left">
+			<div class="lower-l-slider-body">
+
+				<a href="javascript:void(0)" class="l-left-button" onclick="lmoveSlides(1)">
+					<div class="l-slider-left">
+						<img src="images/slider-left-arrow.png" alt="LA">
+					</div>
+				</a>
+
+				<div class="lw-slider fade">
+					<img src="images/slider-images/image11.jpg" />
+				<div class="lw-slider-text">PROJECT SLIDESHOW</div>
+				</div> 
+
+				<div class="lw-slider fade">
+					<img src="images/slider-images/image12.jpg" />
+					<div class="lw-slider-text">PROJECT SLIDESHOW</div>
+				</div> 
+
+				<div class="lw-slider fade">
+					<img src="images/slider-images/image13.jpg" />
+					<div class="lw-slider-text">PROJECT SLIDESHOW</div>
+				</div> 
+				
+				
+
+				<a href="javascript:void(0)" class="l-right-button" onclick="lmoveSlides(1)">
+					<div class="l-slider-right">
+						<img src="images/slider-right-arrow.png" alt="RA">
+					</div>
+				</a>
+			</div>
+
+			<div class="l-slider-indicator">
+					<span class="l-indicator-box" onclick="lcurrentSlide(1)"></span>
+					<span class="l-indicator-box" onclick="lcurrentSlide(2)"></span>
+					<span class="l-indicator-box" onclick="lcurrentSlide(3)"></span>
+			</div>
+		</div>
+
+		<div class="lower-slider-right">
+			right content
+		</div>
+	</div>
+
+
+<!-- Lower Slider Body Ends Here -->
+
+	<div class="read-more-tab-body"> Read More tab here</div>
+
+<!-- Accordion Starts Here -->
+
+	<div class="accordion-body clrfix">
+		<div class="accordion-left">
+			<div class="accordion-wrapper clrfix">
+				<button onclick="accordionExpand('Acc1')">
+					<div class="accordion-button clrfix">	
+							<div class="button-wrapper clrfix">
+								<div class="accordion-header">
+									ACCORDION TITLE
+								</div>
+								<div class="accordion-icon">
+									<img id='imgAcc1' src="images/accordion-plus.png">
+								</div>
+							</div>
+					</div>
+				</button>
+				<div id="Acc1" class="accordion-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</div>
+			</div>
+
+			<div class="accordion-wrapper clrfix">
+				<button onclick="accordionExpand('Acc2')">
+					<div class="accordion-button clrfix">	
+							<div class="button-wrapper clrfix">
+								<div class="accordion-header">
+									ACCORDION TITLE
+								</div>
+								<div class="accordion-icon">
+									<img id='imgAcc2' src="images/accordion-plus.png">
+								</div>
+							</div>
+					</div>
+				</button>
+				<div id="Acc2" class="accordion-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</div>
+			</div>
+
+			<div class="accordion-wrapper clrfix">
+				<button onclick="accordionExpand('Acc3')">
+					<div class="accordion-button clrfix">	
+							<div class="button-wrapper clrfix">
+								<div class="accordion-header">
+									ACCORDION TITLE
+								</div>
+								<div class="accordion-icon">
+									<img id='imgAcc3' src="images/accordion-plus.png">
+								</div>
+							</div>
+					</div>
+				</button>
+				<div id="Acc3" class="accordion-content">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. 
+				</div>
+			</div>
+
+		
+		</div>
+
+		<div class="accordion-right">
+			<div class="accordion-wrapper clrfix">
+				<button onclick="accordionExpandRight('Acc4')">
+					<div class="accordion-button clrfix">	
+							<div class="button-wrapper clrfix">
+								<div class="accordion-header">
+									ACCORDION TITLE
+								</div>
+								<div class="accordion-icon-r">
+									<img id='imgAcc4' src="images/accordion-plus.png">
+								</div>
+							</div>
+					</div>
+				</button>
+				<div id="Acc4" class="accordion-content-r">
+					Lorem ipsum dolor sit amet, consectetur adipisicing 
+				</div>
+			</div>
+
+			<div class="accordion-wrapper clrfix">
+				<button onclick="accordionExpandRight('Acc5')">
+					<div class="accordion-button clrfix">	
+							<div class="button-wrapper clrfix">
+								<div class="accordion-header">
+									ACCORDION TITLE
+								</div>
+								<div class="accordion-icon-r">
+									<img id='imgAcc5' src="images/accordion-plus.png">
+								</div>
+							</div>
+					</div>
+				</button>
+				<div id="Acc5" class="accordion-content-r">
+					Lorem ipsum dolor sit amet, consectetur adipisicing 
+				</div>
+			</div>
+
+			<div class="accordion-wrapper clrfix">
+				<button onclick="accordionExpandRight('Acc6')">
+					<div class="accordion-button clrfix">	
+							<div class="button-wrapper clrfix">
+								<div class="accordion-header">
+									ACCORDION TITLE
+								</div>
+								<div class="accordion-icon-r">
+									<img id='imgAcc6' src="images/accordion-plus.png">
+								</div>
+							</div>
+					</div>
+				</button>
+				<div id="Acc6" class="accordion-content-r">
+					Lorem ipsum dolor sit amet, consectetur adipisicing
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<!-- Accordion Ends Here -->
+
+<!-- TAB Body Starts Here -->
+
+	<div class="tab-body clrfix">
+		<div class="tab-left">
+			<div class="tab-heading clrfix">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" id = "default" class="tablinks" onclick="openTabs(event, 'Tab1')">	TAB TITLE
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="tablinks" onclick="openTabs(event, 'Tab2')">
+							TAB TITLE
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="tablinks" onclick="openTabs(event, 'Tab3')">
+							TAB TITLE
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0)" class="tablinks" onclick="openTabs(event, 'Tab4')">
+							TAB TITLE
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="l-tab-content">
+				<div id="Tab1" class="tab-content clrfix">
+					<div class="tab-paragraph">
+						Tab 1. Vivamus ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="tab-image">
+						<img src="images/tabimage.png" alt="tab Image" />
+					</div>
+				</div>
+
+				<div id="Tab2" class="tab-content clrfix">
+					<div class="tab-paragraph">
+						Tab 2. Vivamus ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="tab-image">
+						<img src="images/tabimage.png" alt="tab Image" />
+					</div>
+				</div>
+
+				<div id="Tab3" class="tab-content clrfix">
+					<div class="tab-paragraph">
+						Tab 3. Vivamus ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="tab-image">
+						<img src="images/tabimage.png" alt="tab Image" />
+					</div>
+				</div>
+
+				<div id="Tab4" class="tab-content clrfix">
+					<div class="tab-paragraph">
+						Tab 4. Vivamus ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+					<div class="tab-image">
+						<img src="images/tabimage.png" alt="tab Image" />
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+
+		<div class="tab-right">
+			<div class="tab-heading clrfix">
+				<ul>
+					<li>
+						<a href="javascript:void(0)" id="r-default" onclick="openRTabs(event, 'r-tab-1')" class="tablinks">
+							TAB TITLE
+						</a>
+					</li>
+
+					<li>
+						<a href="javascript:void(0)" onclick="openRTabs(event, 'r-tab-2')" class="tablinks">
+							TAB TITLE
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="r-tab-content">
+				<div id="r-tab-1" class="r-tab-c">
+					<div class="r-tab-paragraph">
+						Tab 1. Vivamus ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et 
+			 		</div>
+		 		</div>
+
+		 		<div id="r-tab-2" class="r-tab-c">
+		 			<div class="r-tab-paragraph">
+						Tab 2. Vivamus ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et
+			 		</div>
+		 		</div>
+			</div>
+		</div>
+
+	</div>
+
+<!-- Tab Body Ends Here -->
+
+	
+
+<!-- Image Collection Starts Here -->
+
+	<div class="images-collection-body ">
+		<div class="images-upper clrfix">
+
+			<div class="image1">
+
+					<!-- <img src="images/image1.png" alt="Image1" /> -->
+				
+				<div class="image-hide">
+					<a href="">
+						<div class="eye">
+							<img src="images/eye.png" alt="eye" />
+						</div>
+					</a>
+					<a href="">
+						<div class="link">
+							<img src="images/link.png" alt="link" />
+						</div>
+					</a>
+					<p>Lorem ipsum</p>
+				</div>
+
+			
+			</div>
+
+
+			<div class="image2">
+
+				<div class="image-hide">
+					<a href="">
+						<div class="eye">
+							<img src="images/eye.png" alt="eye" />
+						</div>
+					</a>
+					<a href="">
+						<div class="link">
+							<img src="images/link.png" alt="link" />
+						</div>
+					</a>
+					<p>Lorem ipsum</p>
+				</div>
+
+				<!-- <div class="image-show">
+					<img src="images/image1.png" alt="Image1" />
+				</div> -->
+
+			</div>
+
+
+			<div class="image3">
+				<div class="image-hide">
+					<a href="">
+						<div class="eye">
+							<img src="images/eye.png" alt="eye" />
+						</div>
+					</a>
+					<a href="">
+						<div class="link">
+							<img src="images/link.png" alt="link" />
+						</div>
+					</a>
+					<p>Lorem ipsum</p>
+				</div>
+
+				<!-- <div class="image-show">
+					<img src="images/image1.png" alt="Image1" />
+				</div> -->
+			</div>
+
+			<div class="image4">
+				<div class="image-hide">
+					<a href="">
+						<div class="eye">
+							<img src="images/eye.png" alt="eye" />
+						</div>
+					</a>
+					<a href="">
+						<div class="link">
+							<img src="images/link.png" alt="link" />
+						</div>
+					</a>
+					<p>Lorem ipsum</p>
+				</div>
+
+				<!-- <div class="image-show">
+					<img src="images/image1.png" alt="Image1" />
+				</div> -->
+
+			</div>
+		</div>
+		
+		<div class="images-lower clrfix">
+			<div class="image5">
+				<div class="image-hide-low">
+					<a href="">
+						<div class="eye-low">
+							<img src="images/eye.png" alt="eye" />
+						</div>
+					</a>
+					<a href="">
+						<div class="link-low">
+							<img src="images/link.png" alt="link" />
+						</div>
+					</a>
+					<p>Lorem ipsum</p>
+				</div>
+
+				<!-- <div class="image-show">
+					<img src="images/image4.png" alt="Image1">
+				</div> -->
+			</div>
+
+			<div class="image6">
+				<div class="image-hide-low">
+					<a href="">
+						<div class="eye-low">
+							<img src="images/eye.png" alt="eye" />
+						</div>
+					</a>
+					<a href="">
+						<div class="link-low">
+							<img src="images/link.png" alt="link" />
+						</div>
+					</a>
+					<p>Lorem ipsum</p>
+				</div>
+				<!-- <div class="image-show">
+					<img src="images/image4.png" alt="Image1">
+				</div> -->
+			</div>
+		</div>
+
+	</div>
+
+<!-- Image Collection Ends Here -->
+
+	<hr>
+
+<!-- Paragraph Collection Starts Here -->
+	
+	<div class="p-collection-body clrfix">
+		<div class="p1-wrapper">
+			<span class="p-heading">Headline</span>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+		<div class="p2-wrapper">
+			<span class="p-heading">Headline</span>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit. 
+			</p>
+		</div>
+
+		<div class="p3-wrapper">
+			<span class="p-heading">Headline</span>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+			</p>
+		</div>
+
+		<div class="p4-wrapper">
+			<span class="p-heading">Headline</span>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident.
+			</p>
+		</div>
+
+		<div class="p5-wrapper">
+			<span class="p-heading">Headline</span>
+			<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim 
+			</p>
+		</div>
+
+
+	</div>
+
+
+<!-- Paragraph Collection Ends Here -->
+	
+	<hr>
+
+<!-- List Collection Starts Here -->
+
+	<div class="list-collection-body clrfix">
+		<div class="list-collection-c1">
+			<div class="list-collection-heading">
+				Arrow list font size 13px
+			</div>
+			<div class="list-collection-list-wrapper">
+				<ul class="list-1">
+					<li>Quisque at massa ipsum</li>
+					<li>Maecenas a lorem augue, egestas</li>
+					<li>Cras vitae felis at lacus eleifend</li>
+					<li>Etiam auctor diam pellentesque</li>
+					<li>Nulla ac massa at dolor</li>
+					<li>Condementum eleifend vitae vitae</li>
+				</ul>
+			</div>
+		</div>
+		<div class="list-collection-c2">
+			<div class="list-collection-heading">
+				List font size 14px
+			</div>
+			<div class="list-collection-list-wrapper">
+				<ul class="list-2">
+					<li>Quisque at massa ipsum</li>
+					<li>Maecenas a lorem augue, egestas</li>
+					<li>Cras vitae felis at lacus eleifend</li>
+					<li>Etiam auctor diam pellentesque</li>
+					<li>Nulla ac massa at dolor</li>
+					<li>Condementum eleifend vitae vitae</li>
+				</ul>
+			</div>
+		</div>
+		<div class="list-collection-c3">
+			<div class="list-collection-heading">
+				List font size 14px
+			</div>
+			<div class="list-collection-list-wrapper">
+				<ul class="list-3">
+					<li>Quisque at massa ipsum</li>
+					<li>Maecenas a lorem augue, egestas</li>
+					<li>Cras vitae felis at lacus eleifend</li>
+					<li>Etiam auctor diam pellentesque</li>
+					<li>Nulla ac massa at dolor</li>
+					<li>Condementum eleifend vitae vitae</li>
+				</ul>
+			</div>
+		</div>
+		<div class="list-collection-c4">
+			<div class="list-collection-heading">
+				List font size 14px
+			</div>
+			<div class="list-collection-list-wrapper">
+				<ul class="list-4">
+					<li>Quisque at massa ipsum</li>
+					<li>Maecenas a lorem augue, egestas</li>
+					<li>Cras vitae felis at lacus eleifend</li>
+					<li>Etiam auctor diam pellentesque</li>
+					<li>Nulla ac massa at dolor</li>
+					<li>Condementum eleifend vitae vitae</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+
+<!-- List Collection Ends Here -->
+
+<!-- Footer Starts Here -->
+
+	<div class="footer-body-wrapper">
+		<div class="footer-body-upper">
+			<div class="footer-body-upper-wrapper clrfix">
+				<div class="footer-upper-l-col">
+					<div class="footer-logo">
+						<img src="images/logo.png" alt="Logo" />
+					</div>
+					<div class="footer-paragraph">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+					</div>
+					<div class="footer-phone-email">
+					<ul>
+					<li>Phone:<span>182 2569 5896</span></li>
+					<li>e-mail:<span>info@modu.versus</span></li>
+					</ul>
+					</div>
+				</div>
+
+				<div class="footer-upper-m-l-col">
+					<div class="m-l-col-company">
+						Company
+					</div>
+					<div class="m-l-col-list">
+						<ul>
+							<li>About</li>
+							<li>FAQ</li>
+							<li>Contact</li>
+							<li>Terms</li>
+							<li>Privacy</li>
+							<li>Testimonials</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-upper-m-r-col">
+					<div class="m-l-col-company">
+						Community
+					</div>
+					<div class="m-l-col-list">
+						<ul>
+							<li>Blog</li>
+							<li>Forum</li>
+							<li>Support</li>
+							<li>Newsletter</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-upper-r-col">
+					<div class='r-col-heading'>
+						from the <span>BLOG</span>
+					</div>
+					<div class='r-col-content clrfix'>
+						<ul>
+							<li>
+								<div class="r-col-content-details-wrapper clrfix">
+									<div class="r-col-content-image">
+										<img src="images/r-col-content-image1.png" alt="ContentImage"/>
+									</div>
+									<div class="r-col-content-details">
+										<div class="r-col-content-details-upper">
+											Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
+										</div>
+										<div class="r-col-content-details-lower">
+											26 May, 2013
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="r-col-content-details-wrapper clrfix">
+									<div class="r-col-content-image">
+										<img src="images/r-col-content-image1.png" alt="ContentImage"/>
+									</div>
+									<div class="r-col-content-details">
+										<div class="r-col-content-details-upper">
+											Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
+										</div>
+										<div class="r-col-content-details-lower">
+											26 May, 2013
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-body-lower">
+			<div class="footer-body-lower-wrapper clrfix">
+				<div class="footer-lower-copyright">
+				2013 ModusVersus
+				</div>
+				<div class="footer-lower-icons">
+					<ul>
+						<li><a href=""><img src="images/facebook.png" alt="fb"></a></li>
+						<li><a href=""><img src="images/gplus.png" alt="gplus"></a></li>
+						<li><a href=""><img src="images/twitter.png" alt="twitter"></a></li>
+						<li><a href=""><img src="images/rss.png" alt="rss"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Footer Ends Here -->
+
+
+
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/slider-large.js"></script>
+<script type="text/javascript" src="js/slider-medium.js"></script>
+<script>
+document.getElementById('default').click();
+document.getElementById('r-default').click();
+</script>
+</body>
+</html>

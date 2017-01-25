@@ -1,12 +1,22 @@
 var lrslideIndex = 1;
 lrshowSlides(lrslideIndex);
 
+lrAutoSlide = function(){
+  var lrLoop = setInterval(lrshowSlides, 2000);
+}
+
+lrAutoSlide();
+
 function lrmoveSlides(n) {
+  clearInterval(lrLoop);
   lrshowSlides(lrslideIndex += n);
+  setTimeout(lrAutoSlide, 500);
 }
 
 function lrcurrentSlide(n) {
+  clearInterval(lrLoop);
   lrshowSlides(lrslideIndex = n);
+  setTimeout(lrAutoSlide, 500);
 }
 
 function lrshowSlides(n) {
@@ -23,4 +33,10 @@ function lrshowSlides(n) {
   }
   lrslides[lrslideIndex-1].style.display = "block";
   lrdots[lrslideIndex-1].className += " active-iblr";
+
+  if(lrslideIndex<lrslides.length){
+    lrslideIndex++;
+  }else{
+    lrslideIndex = 1;
+  }
 }

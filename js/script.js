@@ -1,18 +1,20 @@
 function openTabs(evt, tabName){
-	var i, 	tabContent, tabLinks;
+	var i, 	tabContent;
+	var tabLinks;
 
 	tabContent = document.getElementsByClassName('tab-content');
 	for (var i = 0; i < tabContent.length; i++){
 		tabContent[i].style.display='none';
 	}
 
-	// tabLinks = document.getElementsByClassName('tablinks');
-	// for (var i =0; i < tabLinks.length; i++_){
-	// 	tabLinks[i].className = tablinks[i].className.replace("active", "");	
-	// }
+	tabLinks = document.getElementsByClassName('tablinks');
+
+	for (var i =0; i < tabLinks.length; i++){
+		tabLinks[i].className = tabLinks[i].className.replace("active", "");	
+	}
 
 	document.getElementById(tabName).style.display = "block";
-	// evt.currentTarget.className += "active";
+	evt.currentTarget.className += " active";
 }
 
 
@@ -24,7 +26,14 @@ function openRTabs(evt, tabName){
 		tabContent[i].style.display='none';
 	}
 
+	tabLinks = document.getElementsByClassName('r-tablinks');
+
+	for (var i =0; i < tabLinks.length; i++){
+		tabLinks[i].className = tabLinks[i].className.replace("active", "");	
+	}
+
 	document.getElementById(tabName).style.display = "block";
+	evt.currentTarget.className += " active";
 }
 
 

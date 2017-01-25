@@ -3,7 +3,8 @@
 <head>
 	<title>MODUSverus | Features</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
-	<link rel="stylesheet" type ="text/css" href="css/layout.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/layout.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/media.css" media="screen" />
 </head>
 
 
@@ -18,13 +19,13 @@
 				</div>
 				<div class="header-nav-bar clrfix">
 					<div class="header-nav-bar-menu">
-						<ul>
+						<ul class="top-nav" id="top-nav-id">
 							<li><a href="">HOME</a></li>
 							<li><a href="">ABOUT</a></li>
 							<li><a href="">SERVICES</a></li>
 							<li class="drop-item">
 									<a href="" class="drop-item-value">
-										<img src="images/down-arrow.png" style="padding-right: 8px;" />PORTFOLIO
+										<img src="images/down-arrow.png" style="padding-right: 8px;" id="portfolio-d-arrow" />PORTFOLIO <span id="portfolio-r-arrow">&nbsp;></span>
 									</a>
 							
 									<div class="header-drop-down-content">
@@ -36,12 +37,22 @@
 							<li><a href="">BLOG</a></li>
 							<li><a href="">FEATURES</a></li>
 							<li><a href="">CONTACTS</a></li>
+							<li class="burger-icon">
+								<a id="burger-icon-href" href="javascript:void(0)" onclick="myFunction()">
+									<img src="images/burger-icon.png">
+								</a>
+							</li>
 						</ul>
 					</div>
 					<div class="header-nav-bar-search">
-						<a class="search-icon-href" href=""><img src="images/search-button.png"></a>
+						<div class="header-search-icon-wrapper">
+							<a class="search-icon-href" href="">
+								<img src="images/search-button.png">
+							</a>
+						</div>
 
 						<div class="search-box-wrapper">
+							<div class="up-arrow"></div>
 							<input id="search-box" type="text" name="search" placeholder="Search the site">
 						</div>
 					</div>
@@ -51,7 +62,7 @@
 		<div class="header-lower">
 			<div class="header-lower-body clrfix">
 				<span id="features-text">FEATURES</span>
-				<span id="home-feature-menu"><a href="">Home</a>&nbsp/&nbsp<a href="">Features</a></span>
+				<span id="home-feature-menu"><a href="">Home</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="">Features</a></span>
 			</div>
 		</div>
 	</div>
@@ -60,12 +71,6 @@
 <!-- Upper Slider Starts Here -->
 
 	<div class='upper-slider-body'> 
-
-		<a href="javascript:void(0)" class="left-button" onclick="moveSlides(1)">
-			<div class="slider-left">
-				<img src="images/slider-left-arrow.png" alt="LA">
-			</div>
-		</a>
 
 		<div class="slider-body clrfix">
 				
@@ -90,6 +95,12 @@
 			<span class="indicator-box" onclick="currentSlide(2)"></span>
 			<span class="indicator-box" onclick="currentSlide(3)"></span>
 		</div>
+
+		<a href="javascript:void(0)" class="left-button" onclick="moveSlides(1)">
+			<div class="slider-left">
+				<img src="images/slider-left-arrow.png" alt="LA">
+			</div>
+		</a>
 
 		<a href="javascript:void(0)" class="right-button" onclick="moveSlides(1)">
 			<div class="slider-right">
@@ -142,12 +153,7 @@
 		<div class="lower-slider-right">
 			<div class="lower-r-slider">
 				<div class="l-r-slider-wrapper">
-					<a href="javascript:void(0)" class="l-r-left-button" onclick="lrmoveSlides(-1)">
-						<div class="l-r-slider-left">
-							<img src="images/left-arrow-single.png" alt="la" />
-						</div>
-					</a>
-
+					
 					<div class="l-r-slider fade">
 						<img src="images/slider-images/image111.jpg" />
 						<div class="l-r-slider-text">Sidebar Slideshow</div>
@@ -163,11 +169,17 @@
 
 
 
+
 					<a href="javascript:void(0)" class="l-r-right-button" onclick="lrmoveSlides(1)">
 						<div class="l-r-slider-right">
 							<img src="images/right-arrow-single.png" alt="ra" />
 						</div>
 					</a>	
+					<a href="javascript:void(0)" class="l-r-left-button" onclick="lrmoveSlides(1)">
+						<div class="l-r-slider-left">
+							<img src="images/left-arrow-single.png" alt="la" />
+						</div>
+					</a>
 
 				</div>
 
@@ -523,13 +535,13 @@
 			<div class="tab-heading clrfix">
 				<ul>
 					<li>
-						<a href="javascript:void(0)" id="r-default" onclick="openRTabs(event, 'r-tab-1')" class="tablinks">
+						<a href="javascript:void(0)" id="r-default" onclick="openRTabs(event, 'r-tab-1')" class="r-tablinks">
 							TAB TITLE
 						</a>
 					</li>
 
 					<li>
-						<a href="javascript:void(0)" onclick="openRTabs(event, 'r-tab-2')" class="tablinks">
+						<a href="javascript:void(0)" onclick="openRTabs(event, 'r-tab-2')" class="r-tablinks">
 							TAB TITLE
 						</a>
 					</li>
@@ -856,12 +868,12 @@
 					</div>
 					<div class="m-l-col-list">
 						<ul>
-							<li>About</li>
-							<li>FAQ</li>
-							<li>Contact</li>
-							<li>Terms</li>
-							<li>Privacy</li>
-							<li>Testimonials</li>
+							<li><a href="">About</a></li>
+							<li><a href="">FAQ</a></li>
+							<li><a href="">Contact</a></li>
+							<li><a href="">Terms</a></li>
+							<li><a href="">Privacy</a></li>
+							<li><a href="">Testimonials</a></li>
 						</ul>
 					</div>
 				</div>
@@ -872,10 +884,10 @@
 					</div>
 					<div class="m-l-col-list">
 						<ul>
-							<li>Blog</li>
-							<li>Forum</li>
-							<li>Support</li>
-							<li>Newsletter</li>
+							<li><a href="">Blog</a></li>
+							<li><a href="">Forum</a></li>
+							<li><a href="">Support</a></li>
+							<li><a href="">Newsletter</a></li>
 						</ul>
 					</div>
 				</div>
@@ -949,6 +961,15 @@
 <script>
 document.getElementById('default').click();
 document.getElementById('r-default').click();
+
+function myFunction() {
+    var x = document.getElementById("top-nav-id");
+    if (x.className === "top-nav") {
+        x.className += " responsive";
+    } else {
+        x.className = "top-nav";
+    }
+}
 </script>
 </body>
 </html>

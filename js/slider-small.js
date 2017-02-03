@@ -2,7 +2,7 @@ var lrslideIndex = 1;
 lrshowSlides(lrslideIndex);
 
 lrAutoSlide = function(){
-  var lrLoop = setInterval(lrshowSlides, 2000);
+ // var lrLoop = setInterval(lrshowSlides, 2000);
 }
 
 lrAutoSlide();

@@ -76,3 +76,15 @@ function accordionExpandRight(accName){
 	accImage = document.getElementById('img' + accName);
 	accImage.src = 'images/accordion-minus.png';
 }
+
+
+function tabToAccordionExpand(accName){
+	var accContent = document.getElementById(accName);
+	if (accContent.className.indexOf("t-a-show") == -1) {
+        accContent.className += " t-a-show";
+    } else { 
+        accContent.className = accContent.className.replace(" t-a-show", "");
+    }
+
+
+}

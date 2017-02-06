@@ -85,6 +85,15 @@ function tabToAccordionExpand(accName){
     } else { 
         accContent.className = accContent.className.replace(" t-a-show", "");
     }
+}
 
-
+function navBarFunction(){
+    var x = document.getElementById("top-nav-id");
+    if (x.className === "top-nav") {
+    	document.getElementsByClassName('burger-icon')[0].style.background = "#844766";
+        x.className += " responsive";
+    } else {
+        x.className = "top-nav";
+        document.getElementsByClassName('burger-icon')[0].style.background = "none";
+    }
 }

@@ -1,8 +1,9 @@
 var lrslideIndex = 1;
+var lrLoop;
 lrshowSlides(lrslideIndex);
 
 lrAutoSlide = function(){
- // var lrLoop = setInterval(lrshowSlides, 2000);
+ lrLoop = setInterval(lrshowSlides, 2000);
 }
 
 lrAutoSlide();

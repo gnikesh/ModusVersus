@@ -86,13 +86,20 @@ body{
 	padding: 10px 20px 10px 20px;
 }
 
-li.burger-icon{
+.burger-icon{
 	display: none;
+	padding: 6px 10px;
+	border-radius: 5px;
+}
+
+.burger-icon:hover{
+	background: #844766 !important;
 }
 
 #portfolio-r-arrow{
 	display: none;
 }
+
 .header-nav-bar-menu ul li:hover{
 	/*display: block;*/
 	background: #844766;
@@ -116,8 +123,12 @@ li.burger-icon{
 	border-radius: 5px;
 }
 
-#burger-icon-href{
-	padding: 5px;
+#burger-icon-href {
+	outline: none;
+}
+
+#burger-icon-href img{
+	outline: none;
 }
 
 .header-nav-bar-search{
@@ -650,6 +661,7 @@ padding-top: 48px;
 	border-bottom: 3px solid #E5E6E6;
 	/*margin-right: 30px;*/
 	margin-top: 42px;
+	padding-bottom: 20px;
 }
 
 .read-more-no-r-margin{
@@ -919,7 +931,7 @@ padding-top: 48px;
 }
 
 .up-image{
-	
+	position: relative;
 	width: 23%;
 	height: 20.9vw;
 	float: left;
@@ -937,7 +949,9 @@ padding-top: 48px;
 .image-hide{
 	display: none;
 	background: #AE688B;
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
@@ -998,25 +1012,15 @@ padding-top: 48px;
 	display: block;	
 }
 
-.image1:hover img.img-to-hide{
-	display: none;	
-}
-
 .image2:hover .image-hide{
 	display: block;	
 }
 
-.image2:hover img.img-to-hide{
-	display: none;	
-}
 
 .image3:hover .image-hide{
 	display: block;	
 }
 
-.image3:hover img.img-to-hide{
-	display: none;	
-}
 
 .image4{
 	margin-right: 0px;
@@ -1026,16 +1030,14 @@ padding-top: 48px;
 	display: block;	
 }
 
-.image4:hover img.img-to-hide{
-	display: none;	
-}
 .images-lower{
 	width: 100%;
 }
 
 .down-image{
+	position: relative;
 	width: 48.5%;
-	height: 270px;
+	/*height: 270px;*/
 	float: left;
 	margin-top: 35px;
 	margin-right: 0%;
@@ -1051,13 +1053,6 @@ padding-top: 48px;
 	display: block;
 }
 
-.image5:hover .image-show img{
-	display: none;
-}
-
-.image6:hover .image-show img{
-	display: none;
-}
 .image6{
 	margin-right: 0px;
 	float: right !important;
@@ -1069,8 +1064,10 @@ padding-top: 48px;
 
 .image-hide-low{
 	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
 	background: #AE688B;
-	position: relative;
 	width: 100%;
 	height: 20.75vw;
 	border-radius: 10px;
@@ -1282,6 +1279,7 @@ hr{
 }
 
 .footer-body-upper{
+	padding-bottom: 20px;
 	background: url('../images/footer-border.png') #A65980;
 	background-repeat: repeat-x;
 	
@@ -1434,7 +1432,7 @@ hr{
 .footer-body-lower-wrapper{
 	max-width: 73.125em;
 	margin: 0 auto;
-	height: 50px;
+	height: 48px;
 }
 
 .footer-lower-copyright{
@@ -1457,7 +1455,7 @@ hr{
 
 .footer-lower-icons ul li{
 	float: left;
-	padding-right: 5px;
+	padding: 7px 14px;
 }
 
 .footer-lower-icons ul li:last-child{

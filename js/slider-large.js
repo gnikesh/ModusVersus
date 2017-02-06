@@ -2,7 +2,7 @@ var slideIndex = 1;
 showSlides(slideIndex);
 
 autoSlide = function(){
- // this.loop = setInterval(showSlides, 5000);
+  this.loop = setInterval(showSlides, 5000);
 }
 
 autoSlide();

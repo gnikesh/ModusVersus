@@ -168,13 +168,35 @@
 		margin-right: 10px;
 	}
 
-	.header-nav-bar-search{
-		float: left;
-		margin-bottom: 20px;
-		margin-top: 6px;
-		padding-right: 0px;
+	.header-search-icon-wrapper{
+		display: none;
 	}
 
+	.header-upper-body{
+		padding-bottom: 15px;
+	}
+
+	.header-logo{
+		width: 30%;
+	}
+
+	.header-nav-bar-search{
+		position: absolute;
+		width: 30%;
+		top: 18px;
+		left: 224px;
+	}
+	
+	.search-box-wrapper{
+		display: block;
+		width: 100%;
+	}
+	.header-nav-bar-search input#search-box{
+		border: 2px solid #25B3E0;
+		height: 20px;
+		width: 100%;
+		display: block;
+	}
 	.search-box-wrapper{
 		position: absolute;
 	}
@@ -184,11 +206,7 @@
 	}
 
 	.up-arrow{
-		position: relative;
-		margin-top: -6px;
-		margin-left: 10px;
-		top:0;
-		right: 0;
+		display: none;
 	}
 
 	.header-nav-bar-menu ul li a{
@@ -205,25 +223,20 @@
 		display: none;
 	}
 
-	ul.top-nav li.burger-icon{
+	.burger-icon{
 		float: right;
-		display: inline;
+		display: inline-block;
+		position: absolute;
+		top: 20px;
+		right: 10px;
 	}
 
-	#burger-icon-href{
-		padding: 5px 8px;
-	}
 
 
 	ul.top-nav.responsive {
 		position: relative;
 	}
 
-	ul.top-nav.responsive li.burger-icon{
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
 
 	ul.top-nav.responsive li{
 		float: none;
@@ -246,8 +259,8 @@
 
 	ul.top-nav li.drop-item .header-drop-down-content{
 		position: absolute;
-		top:-10px;
-		left: 150px;
+		top:-20px;
+		left: 120px;
 	}
 
 	#portfolio-d-arrow{
@@ -469,7 +482,44 @@
 
 }
 
+@media only screen and (max-width: 474px) {
+	.header-logo {
+		width: 100%;
+	}
+
+	.header-nav-bar-search{
+		top: 52px;
+		left: 10px;
+		width: 50%;
+	}
+
+	.header-nav-bar-menu{
+		margin-top: 40px;
+	}
+
+	.header-nav-bar-search input#search-box{
+		width: 100%;
+		height: 25px;
+	}
+
+	.r-col-content-details-upper{
+		width: 217px
+	}
+
+	.burger-icon{
+		top: 55px;
+	}
+}
 @media only screen and (max-width: 320px){
+
+	/*.header-nav-bar-search{
+		width: 90%;
+	}
+*/
+	/*.header-nav-bar-search input#search-box{
+		width: 92.5%;
+	}*/
+
 	.upper-slider-body a.left-button, a.right-button{
 		top:28%;
 	}
@@ -512,5 +562,17 @@
 	.image-hide-low p{
 		left: 34%;
 		bottom: 15%;
+	}
+
+	.r-col-content-details-upper{
+		width: 100%;
+	}
+
+	.m-l-col-company{
+		padding-left: 15px;
+	}
+
+	.m-l-col-list{
+		padding-left: 50px;
 	}
 }

@@ -2,7 +2,7 @@ var lslideIndex = 1;
 lshowSlides(lslideIndex);
 
 lAutoSlide = function(){
-  //this.lLoop = setInterval(lshowSlides, 3000);
+  this.lLoop = setInterval(lshowSlides, 3000);
 }
 
 lAutoSlide();

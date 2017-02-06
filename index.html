@@ -15,10 +15,15 @@
 		<div class="header-upper">
 			<div class="header-upper-body clrfix">
 				<div class="header-logo">
-					<img src="images/logo.png" alt="Logo" />
+					<a href="#"><img src="images/logo.png" alt="Logo" /></a>
 				</div>
 				<div class="header-nav-bar clrfix">
 					<div class="header-nav-bar-menu">
+						<div class="burger-icon">
+								<a id="burger-icon-href" href="javascript:void(0)" onclick="navBarFunction()">
+									<img src="images/burger-icon.png">
+								</a>
+						</div>
 						<ul class="top-nav" id="top-nav-id">
 							<li><a href="">HOME</a></li>
 							<li><a href="">ABOUT</a></li>
@@ -37,11 +42,6 @@
 							<li><a href="">BLOG</a></li>
 							<li><a href="">FEATURES</a></li>
 							<li><a href="">CONTACTS</a></li>
-							<li class="burger-icon">
-								<a id="burger-icon-href" href="javascript:void(0)" onclick="myFunction()">
-									<img src="images/burger-icon.png">
-								</a>
-							</li>
 						</ul>
 					</div>
 					<div class="header-nav-bar-search">
@@ -934,7 +934,7 @@
 			<div class="footer-body-upper-wrapper clrfix">
 				<div class="footer-upper-l-col">
 					<div class="footer-logo">
-						<img src="images/logo.png" alt="Logo" />
+						<a href="#"><img src="images/logo.png" alt="Logo" /></a>
 					</div>
 					<div class="footer-paragraph">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -991,7 +991,7 @@
 									</div>
 									<div class="r-col-content-details">
 										<div class="r-col-content-details-upper">
-											Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
+											<a href="#">Lorem ipsum dolor sit amet, consec tetur adipisicing elit.</a>
 										</div>
 										<div class="r-col-content-details-lower">
 											26 May, 2013
@@ -1006,7 +1006,7 @@
 									</div>
 									<div class="r-col-content-details">
 										<div class="r-col-content-details-upper">
-											Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
+											<a href="#">Lorem ipsum dolor sit amet, consec tetur adipisicing elit.</a>
 										</div>
 										<div class="r-col-content-details-lower">
 											26 May, 2013
@@ -1047,15 +1047,6 @@
 <script>
 document.getElementById('default').click();
 document.getElementById('r-default').click();
-
-function myFunction() {
-    var x = document.getElementById("top-nav-id");
-    if (x.className === "top-nav") {
-        x.className += " responsive";
-    } else {
-        x.className = "top-nav";
-    }
-}
 </script>
 </body>
 </html>
